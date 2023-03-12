@@ -1,4 +1,4 @@
-(ns aoc2022.day1.task1 
+(ns aoc2022.day1.part1 
   (:require
     [clojure.string :as str]))
 
@@ -9,7 +9,7 @@
   [cals]
   (reduce + (map #(Integer. %) cals)))
 
-(defn task1
+(defn find-top-calorie-sum
   [calories]
   (->> (str/split calories #"\n")
        (partition-by #(= "" %))
