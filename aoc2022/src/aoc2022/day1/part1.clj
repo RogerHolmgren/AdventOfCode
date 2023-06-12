@@ -17,4 +17,5 @@
        (map #(my-sum %))
        (apply max)))
 
+(find-top-calorie-sum input)
 
